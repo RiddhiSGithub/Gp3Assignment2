@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Color (Green) -->
+    <color name="lightGreen">#4CAF50</color>
+
+    <!-- Primary Dark Color (Darker shade of Green) -->
+    <color name="darkGreen">#388E3C</color>
+
+    <!-- Accent Color (White) -->
+    <color name="White">#FFFFFF</color>
+
+    <!-- Text Color (Black) -->
+    <color name="Black">#000000</color>
+</resources>

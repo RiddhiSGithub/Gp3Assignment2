@@ -1,0 +1,37 @@
+<resources>
+    <style name="Base.Theme.Gp3Assignment2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary theme colors -->
+        <item name="colorPrimary">@color/darkGreen</item> <!-- Green -->
+        <item name="colorPrimaryDark">@color/lightGreen</item> <!-- Darker shade of Green -->
+        <item name="colorAccent">@color/White</item> <!-- White -->
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/darkGreen</item>
+        <item name="android:textColorSecondary">@color/White</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+    <style name="Base.Theme.Gp3Assignment2." parent="Base.Theme.Gp3Assignment2"/>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Primary theme colors -->
+        <item name="colorPrimary">@color/lightGreen</item> <!-- Green -->
+        <item name="colorPrimaryDark">@color/darkGreen</item> <!-- Darker shade of Green -->
+        <item name="colorAccent">@color/White</item> <!-- White -->
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/darkGreen</item>
+        <item name="android:textColorSecondary">@color/White</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/darkGreen</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:minWidth">100dp</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

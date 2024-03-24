@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <!-- Task ID Label -->
+    <TextView
+        android:id="@+id/text_task_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_id"
+        android:textSize="10sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/text_task_id"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp">
+    <TextView
+        android:id="@+id/text_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_name"
+        android:textSize="10sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        />
+
+    <!-- Task Name Input -->
+    <EditText
+        android:id="@+id/edit_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_task_name"
+        android:textColorHint="@color/darkGreen"
+        android:textColor="@color/darkGreen"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:gravity="right"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAutofill="no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearTaskName"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp">
+    <TextView
+        android:id="@+id/text_due_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date"
+        android:textSize="10sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+         />
+        <EditText
+            android:id="@+id/edit_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_due_date"
+            android:inputType="date"
+            android:textColorHint="@color/darkGreen"
+            android:textColor="@color/darkGreen"
+            android:maxLines="1"
+            android:textSize="10sp"
+            android:layout_marginStart="16dp"
+            android:importantForAutofill="no" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearDueDate"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="16dp">
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textSize="10sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            tools:ignore="SmallSp" />
+        <EditText
+            android:id="@+id/edit_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_time"
+            android:inputType="time"
+            android:maxLines="1"
+            android:textSize="10sp"
+            android:textColorHint="@color/darkGreen"
+            android:textColor="@color/darkGreen"
+            android:layout_marginStart="16dp"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@id/linearTime" />
+
+</RelativeLayout>
